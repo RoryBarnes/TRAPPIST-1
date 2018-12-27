@@ -12,7 +12,7 @@ as predicted by `vplanet <https://github.com/VirtualPlanetaryLaboratory/vplanet>
 **Author**            Rory Barnes
 **Modules**           SpiNBody
 **Approx. runtime**   75 Minutes
-**Source code**       `vplanet <https://github.com/VirtualPlanetaryLaboratory/vplanet>`_
+**Source code**       `vplanet <https://github.com/VirtualPlanetaryLaboratory/vplanet>`_,
                       `vplot <https://github.com/VirtualPlanetaryLaboratory/vplot>`_
 ===================   ============
 
