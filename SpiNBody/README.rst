@@ -4,7 +4,7 @@ N-Body Integration of the TRAPPIST-1 Planetary System
 Overview
 --------
 
-Orbital evolution of the TRAPPIST-1 Planets
+Orbital evolution of the TRAPPIST-1 planets
 as predicted by `vplanet <https://github.com/VirtualPlanetaryLaboratory/vplanet>`_.
 
 ===================   ============
