@@ -1,0 +1,27 @@
+# Primary input file for VPLANET
+sSystemName               trappist1  # System Name
+bOverwrite                1               # Allow file overwrites?
+iVerbose                  5
+
+# TRAPPIST-1 info from
+saBodyFiles               star.in b.in c.in d.in e.in f.in g.in h.in
+sIntegrationMethod        Runge
+
+# Input/Output Units
+sUnitMass                 solar           # Options: gram, kg, Earth, Neptune, Jupiter, solar
+sUnitLength               AU              # Options: cm, m, km, Earth, Jupiter, solar, AU
+sUnitTime                 year            # Options: sec, day, year, Myr, Gyr
+sUnitAngle                deg             # Options: deg, rad
+
+# Input/Output
+bDoLog                    1               # Write a log file?
+iDigits                   8               # Maximum number of digits to right of decimal
+dMinValue                 1e-10           # Minimum value of eccentricity/obliquity
+iSciNot                   4
+
+# Evolution Parameters
+bDoForward                1               # Perform a forward evolution?
+bVarDt                    1               # Use variable timestepping?
+dEta                      0.01
+dStopTime                 100             # Stop time for evolution
+dOutputTime               0.1             # Output timesteps (assuming in body files)
