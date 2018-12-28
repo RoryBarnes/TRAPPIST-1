@@ -31,4 +31,4 @@ Expected output
    :width: 600px
    :align: center
 
-Atmospheric evolution of the TRAPPIST-1 planets as modified by the evolving host star. Planetary parameters are from `Grimm et al. (2018) <https://ui.adsabs.harvard.edu//#abs/2018A&A...613A..68G/>`_. 
+Atmospheric evolution of the TRAPPIST-1 planets as modified by the evolving host star. Planetary parameters are from `Grimm et al. (2018) <https://ui.adsabs.harvard.edu//#abs/2018A&A...613A..68G/>`_. *Top Left:* Bolometric stellar luminosity. *Top Right:* Stellar XUV luminosity. *Middle Left:* Stellar effective temperature. *Middle Right:* Habitable zone evolution. Dashed lines are the empirical limits and solid are the conservative limits (`Kopparapu et al. 2013 <https://ui.adsabs.harvard.edu//#abs/2013ApJ...765..131K/abstract>`_). *Bottom Left:* Surface/atmospheric water content in units of terrestrial oceans. *Bottom Right:* Oxygen buildup, assuming no sinks.  
