@@ -8,7 +8,7 @@ Water photolysis, hydrogen escape, and oxygen buildup on the TRAPPIST-1 planets
 as predicted by `vplanet <https://github.com/VirtualPlanetaryLaboratory/vplanet>`_.
 
 ===================   ============
-**Date**              12/20/18
+**Date**              12/27/18
 **Author**            Rory Barnes
 **Modules**           AtmEsc, STELLAR
 **Approx. runtime**   20 seconds
