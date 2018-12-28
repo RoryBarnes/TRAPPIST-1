@@ -1,0 +1,21 @@
+# Planet f parameters
+sName                     f              # Body's name
+saModules                 atmesc         # Modules to apply, exact spelling required
+
+# Physical Properties (from Grimm et al. [2018])
+dMass                     -0.934           # Mass, negative -> Earth masses
+dRadius                   -0.816           # Radius, negative -> Earth radii
+
+# Orbital Properties
+dSemi                     -0.03853361     # Semi-major axis, negative -> AU
+dEcc                       0.0107         # Eccentricity
+
+# AtmEsc Properties
+dXFrac                    1.0
+dSurfWaterMass            -10.0
+dEnvelopeMass             0.0
+sWaterLossModel           lbexact
+sAtmXAbsEffH2OModel       bolmont16
+bInstantO2Sink            0
+
+saOutputOrder    	        Time -SurfWaterMass -OxygenMass
