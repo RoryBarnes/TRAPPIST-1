@@ -31,4 +31,4 @@ Expected output
    :width: 600px
    :align: center
 
-
+Atmospheric evolution of the TRAPPIST-1 planets as modified by the evolving host star. Planetary parameters are from `Grimm et al. (2018) <https://ui.adsabs.harvard.edu//#abs/2018A&A...613A..68G/>`_. 
