@@ -30,3 +30,5 @@ Expected output
 .. figure:: Trappist1.NBody.png
    :width: 600px
    :align: center
+
+Semi-major axis (left), eccentricity (middle) and instellation (right) evolution of TRAPPIST-1 d,e,f, with stellar parameters from `van Grootel et al. (2018) <https://ui.adsabs.harvard.edu//#abs/2018ApJ...853...30V/>`_ and planetary parameters from `Grimm et al. (2018) <https://ui.adsabs.harvard.edu//#abs/2018A&A...613A..68G/>`_. 
