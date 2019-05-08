@@ -1,0 +1,15 @@
+# Input file for the star TRAPPIST-1
+sName	          star
+saModules	      stellar
+
+# Physical Props
+dMass           0.089
+dAge            1e7
+
+# STELLAR Props
+sStellarModel   baraffe
+dSatXUVFrac     0.0029      # FLeming et al. (2019)
+dSatXUVTime     -7          # FLeming et al. (2019)
+
+# Output Columns
+saOutputOrder 	Time -Luminosity -LXUVTot Temperature Radius

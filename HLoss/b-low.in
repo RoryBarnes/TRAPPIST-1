@@ -1,0 +1,21 @@
+#
+sName                     b-low
+saModules                 atmesc
+
+# Physical Props
+dMass                     -1.1
+dEnvelopeMass             -0.1
+sPlanetRadiusModel        lopez
+
+# Orbital Props
+dSemi                     -0.01154775
+dEcc                      0.
+
+# AtmEsc Props
+dXFrac                    1.0
+dSurfWaterMass            0
+bHaltEnvelopeGone         1
+dAtmXAbsEffH              0.1
+
+# Output Columns
+saOutputOrder             Time -Mass -EnvelopeMass -Radius
