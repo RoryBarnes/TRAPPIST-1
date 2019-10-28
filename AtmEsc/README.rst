@@ -5,7 +5,8 @@ Overview
 --------
 
 Water photolysis, hydrogen escape, and oxygen buildup on the TRAPPIST-1 planets
-as predicted by `vplanet <https://github.com/VirtualPlanetaryLaboratory/vplanet>`_.
+as predicted by `VPLanet <https://github.com/VirtualPlanetaryLaboratory/vplanet>`_. 
+Switch to branch BlackWhite for a black & white version.
 
 ===================   ============
 **Date**              12/27/18
