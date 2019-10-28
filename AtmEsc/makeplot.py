@@ -76,11 +76,11 @@ axes[1,1].set_ylabel("Habitable Zone (AU)")
 axes[1,1].set_xscale('log')
 
 ## Bottom Left: Surface water ##
-axes[2,0].plot(time, output.b.SurfWaterMass,'k',label='b')
-axes[2,0].plot(time, output.c.SurfWaterMass,color=vpl.colors.red,label='c')
-axes[2,0].plot(time, output.d.SurfWaterMass,color=vpl.colors.orange,label='d')
-axes[2,0].plot(time, output.e.SurfWaterMass,color=vpl.colors.pale_blue,label='e')
-axes[2,0].plot(time, output.f.SurfWaterMass,color=vpl.colors.purple,label='f')
+axes[2,0].plot(time, output.b.SurfWaterMass,color='k',linestyle='-',label='b')
+axes[2,0].plot(time, output.c.SurfWaterMass,color='k',linestyle=':',label='c')
+axes[2,0].plot(time, output.d.SurfWaterMass,color='k',linestyle='-.',label='d')
+axes[2,0].plot(time, output.e.SurfWaterMass,color='k',linestyle='--',label='e')
+axes[2,0].plot(time, output.f.SurfWaterMass,color='grey',linestyle='-',label='f')
 
 # Format
 axes[2,0].set_xlim(1e6,time.max())
@@ -88,14 +88,14 @@ axes[2,0].set_ylim(0,11)
 axes[2,0].set_xlabel("Time [yr]")
 axes[2,0].set_ylabel("Surface Water (TO)")
 axes[2,0].set_xscale('log')
-axes[2,0].legend(loc='best')
 
 ## Bottom Right: Abiotic Oxygen ##
-axes[2,1].plot(time, output.b.OxygenMass,'k')
-axes[2,1].plot(time, output.c.OxygenMass,color=vpl.colors.red)
-axes[2,1].plot(time, output.d.OxygenMass,color=vpl.colors.orange)
-axes[2,1].plot(time, output.e.OxygenMass,color=vpl.colors.pale_blue)
-axes[2,1].plot(time, output.f.OxygenMass,color=vpl.colors.purple)
+axes[2,1].plot(time, output.b.OxygenMass,color='k',linestyle='-',label='b')
+axes[2,1].plot(time, output.c.OxygenMass,color='k',linestyle=':',label='c')
+axes[2,1].plot(time, output.d.OxygenMass,color='k',linestyle='-.',label='d')
+axes[2,1].plot(time, output.e.OxygenMass,color='k',linestyle='--',label='e')
+axes[2,1].plot(time, output.f.OxygenMass,color='grey',linestyle='-',label='f')
+axes[2,1].legend(loc='best')
 
 # Format
 axes[2,1].set_xlim(1e6,time.max())

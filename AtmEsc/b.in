@@ -13,6 +13,7 @@ dEnvelopeMass             0.0
 sWaterLossModel           lbexact
 sAtmXAbsEffH2OModel       bolmont16
 bInstantO2Sink            0
+bUseEnergyLimited            1
 
 # Orbital Properties
 dSemi                     -0.01154775     # Semi-major axis, negative -> AU
