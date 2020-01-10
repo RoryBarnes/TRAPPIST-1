@@ -4,6 +4,8 @@ import subprocess as subp
 import string as str
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
+import vplot
+
 
 file=open('trappist1.tideheat.out')
 nlines=996
@@ -19,7 +21,7 @@ hh=[0 for j in range(nlines)]
 
 j=0
 for line in file:
-    words=str.split(line)
+    words=line.split()
     e[j]=float(words[0])
     hb[j]=float(words[1])
     hc[j]=float(words[2])
@@ -30,27 +32,25 @@ for line in file:
     hh[j]=float(words[7])
     j += 1
 
-fbk = {'lw':0.0, 'edgecolor':None}
-fig = plt.figure(figsize=(10,8), dpi=300,facecolor='black')
-
+fig = plt.figure(figsize=(10,8), dpi=300)
+ax=fig.add_subplot(1,1,1)
 fig.subplots_adjust(wspace=.05,left=.01,bottom=.01)
-ax = fig.add_subplot(1,1,1,axisbg='k')
 
-ax.spines['top'].set_color('white')
-ax.spines['top'].set_linewidth(2)
-ax.spines['right'].set_color('white')
-ax.spines['right'].set_linewidth(2)
-ax.spines['bottom'].set_linewidth(2)
-ax.spines['bottom'].set_color('white')
-ax.spines['left'].set_color('white')
-ax.spines['left'].set_linewidth(2)
+#ax.spines['top'].set_color('white')
+#ax.spines['top'].set_linewidth(2)
+#ax.spines['right'].set_color('white')
+#ax.spines['right'].set_linewidth(2)
+#ax.spines['bottom'].set_linewidth(2)
+#ax.spines['bottom'].set_color('white')
+#ax.spines['left'].set_color('white')
+#ax.spines['left'].set_linewidth(2)
 
-ax.title.set_color('white')
-ax.yaxis.label.set_color('white')
-ax.xaxis.label.set_color('white')
-ax.tick_params(axis='x', which ='both',colors='white')
-ax.tick_params(axis='y', which = 'both',colors='white')
-    
+#ax.title.set_color('white')
+#ax.yaxis.label.set_color('white')
+#ax.xaxis.label.set_color('white')
+#ax.tick_params(axis='x', which ='both',colors='white')
+#ax.tick_params(axis='y', which = 'both',colors='white')
+
 plt.rcParams['axes.linewidth'] = 3
 plt.xlim(0.001,0.1)
 plt.ylim(1e-3,1000)
@@ -89,7 +89,5 @@ plt.plot(e,hh,color='w',linewidth=3)
 plt.text(0.035,0.004,'h',color='w',fontsize=25)
 
 
-plt.savefig('trappist1.tideheat.png',bbox_inches='tight',facecolor=fig.get_facecolor())
+plt.savefig('trappist1.tideheat.pdf',bbox_inches='tight',facecolor=fig.get_facecolor())
 plt.close()
-
-
