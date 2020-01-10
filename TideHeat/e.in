@@ -1,0 +1,17 @@
+# Planet e
+sName	        e		            # Body's name
+saModules	eqtide                     # Modules to apply, exact spelling required
+
+# Physical Parameters
+dMass         -0.62                        # Mass, solar masses
+dObliquity    0		
+bForceEqSpin  1
+dRadGyra      0.5                         # Radius of gyration (moment of inertia constant)
+dRadius       -0.918
+
+saTidePerts   trappist1
+dTidalQ	      100
+dK2	      0.3
+
+dSemi	      0.02817
+dEcc 0.1994191743058936
