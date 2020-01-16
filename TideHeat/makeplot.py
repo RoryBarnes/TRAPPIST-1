@@ -4,8 +4,21 @@ import subprocess as subp
 import string as str
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
-import vplot
+import sys
+try:
+    import vplot as vpl
+except:
+    print('Cannot import vplot. Please install vplot.')
 
+# Check correct number of arguments
+if (len(sys.argv) != 2):
+    print('ERROR: Incorrect number of arguments.')
+    print('Usage: '+sys.argv[0]+' <pdf | png>')
+    exit(1)
+if (sys.argv[1] != 'pdf' and sys.argv[1] != 'png'):
+    print('ERROR: Unknown file format: '+sys.argv[1])
+    print('Options are: pdf, png')
+    exit(1)
 
 file=open('trappist1.tideheat.out')
 nlines=996
@@ -88,6 +101,11 @@ plt.text(0.021,0.05,'g',color='w',fontsize=25)
 plt.plot(e,hh,color='w',linewidth=3)
 plt.text(0.035,0.004,'h',color='w',fontsize=25)
 
+fig.tight_layout()
 
-plt.savefig('trappist1.tideheat.pdf',bbox_inches='tight',facecolor=fig.get_facecolor())
+if (sys.argv[1] == 'pdf'):
+    fig.savefig('Trappist1.tidheat.pdf', bbox_inches="tight", dpi=600)
+if (sys.argv[1] == 'png'):
+    fig.savefig('Trappist1.tideheat.png', bbox_inches="tight", dpi=600)
+
 plt.close()

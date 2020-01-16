@@ -16,7 +16,7 @@ def GetLogValue(file,body,param):
             if current == 1 and param in words[0]:
                 last=len(words)-1
                 return words[last]
-            
+
 
 emin=1e-5
 emax=0.2
@@ -49,11 +49,11 @@ while e <= emax:
         cmd2="echo dEcc    "+repr(e)+" >> "+outfile[j]
         subp.call(cmd2,shell=True)
     #exit()
-    cmd3="/Users/rory/bin/vplanet vpl.in >& dump"
+    cmd3="vplanet vpl.in >& dump"
     subp.call(cmd3,shell=True)
 
     # Now get heat fluxes
-    print(n)
+    #print(n)
     heatfile.write(repr(e)+' ')
     for j in range(npl):
         heat[j][n] = float(GetLogValue('trappist1.log',name[j],'SurfEnFluxEqtide'))
