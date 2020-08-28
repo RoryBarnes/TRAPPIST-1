@@ -17,5 +17,6 @@ dEnvelopeMass             0.0
 sWaterLossModel           lbexact
 sAtmXAbsEffH2OModel       bolmont16
 bInstantO2Sink            0
+bStopWaterLossinHZ	  0
 
 saOutputOrder    	        Time -SurfWaterMass -OxygenMass
