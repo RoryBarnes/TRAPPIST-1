@@ -1,11 +1,12 @@
-Tidal Heating of the TRAPPIST-1 e due to rotation and eccentricity
+Tidal Heating of the TRAPPIST-1 e due to Rotation and Eccentricity
 ============
 
 Overview
 --------
 
-Tidal heating of the TRAPPIST-1 e as predicted by the eqtide module in
-`VPLanet <https://github.com/VirtualPlanetaryLaboratory/vplanet>`_.
+Tidal heating of the TRAPPIST-1 e as predicted by the EqTide module in
+`VPLanet <https://github.com/VirtualPlanetaryLaboratory/vplanet>`_. The
+obliquity is set to 0.
 
 ===================   ============
 **Date**              08/28/2020
@@ -43,4 +44,5 @@ Expected output
 Surface energy flux in W/m^2 due to tides as a function of eccentricity and
 rotation period. The top panel is the CPL model with a tidal Q of 100 and the
 bottom panel is the CTL model with a tidal time lag of 628 seconds. In both
-cases the Love number of degree 2 is 0.3.
+cases the Love number of degree 2 is 0.3. The orbital period of planet e is ~6 
+days and the 3:2 resonance is at 4 days.
