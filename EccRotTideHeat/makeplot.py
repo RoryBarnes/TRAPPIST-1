@@ -132,7 +132,7 @@ for dir in dirs:
             iEcc += 1
             iRot = 0
 
-ContSet = axes[1].contour(ecc,rot,heat,7,colors='black',linestyles='dashed',
+ContSet = axes[1].contour(ecc,rot,heat,7,colors='black',linestyles='solid',
                       levels=[50,100,150,200,500,1000,2000],linewidths=3,origin='lower')
 plt.clabel(ContSet,fmt="%d",inline=True,fontsize=18)
 
