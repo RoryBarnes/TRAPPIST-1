@@ -13,8 +13,8 @@ Tidal heating of the TRAPPIST-1 e as predicted by the eqtide module in
 **Modules**           EqTide
 **Approx. runtime**   100 seconds
 **Source code**       `vplanet <https://github.com/VirtualPlanetaryLaboratory/vplanet>`_,
-                      `vplot <https://github.com/VirtualPlanetaryLaboratory/vplot>`_
-                      `vspace`
+                      `vplot <https://github.com/VirtualPlanetaryLaboratory/vplot>`_,
+                      `vspace`,
                       `multi-planet`
 ===================   ============
 
@@ -29,8 +29,9 @@ To run this example
   multi-planet vspace.in <ncores>
   python makeplot.py <pdf | png>
 
-Note that these commands will create directories called "data" in the CPL and
-CTL subdirectories.
+Here <ncores> is the number of cores to run the parameter sweep with. Note that
+these commands will create directories called "data" in the CPL and CTL
+subdirectories.
 
 Expected output
 ---------------
