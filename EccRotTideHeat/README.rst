@@ -14,6 +14,8 @@ Tidal heating of the TRAPPIST-1 e as predicted by the eqtide module in
 **Approx. runtime**   100 seconds
 **Source code**       `vplanet <https://github.com/VirtualPlanetaryLaboratory/vplanet>`_,
                       `vplot <https://github.com/VirtualPlanetaryLaboratory/vplot>`_
+                      `vspace`
+                      `multi-planet`
 ===================   ============
 
 To run this example
@@ -21,9 +23,14 @@ To run this example
 
 .. code-block:: bash
 
-  vspace vspace.in
-  multi-planet vspace.in
+  cd CPL; vspace vspace.in
+  multi-planet vspace.in <ncores>
+  cd ../CTL; vspace vspace.in
+  multi-planet vspace.in <ncores>
   python makeplot.py <pdf | png>
+
+Note that these commands will create directories called "data" in the CPL and
+CTL subdirectories.
 
 Expected output
 ---------------
@@ -33,4 +40,6 @@ Expected output
    :align: center
 
 Surface energy flux in W/m^2 due to tides as a function of eccentricity and
-rotation period. The tidal Q is 100 and the Love number of degree 2 is 0.3. 
+rotation period. The top panel is the CPL model with a tidal Q of 100 and the
+bottom panel is the CTL model with a tidal time lag of 628 seconds. In both
+cases the Love number of degree 2 is 0.3.

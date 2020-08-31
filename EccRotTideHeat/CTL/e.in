@@ -1,0 +1,20 @@
+# TRAPPIST-1 e's Properties
+# Template for vspace
+sName       e            # Body's name
+saModules   eqtide   # Modules to apply to this body
+
+# Physical Parameters
+dMass		     -1  # Mass, negative -> Earth masses
+dRadius      -1  # Radius, negatice -> Earth radii
+dRadGyra	   0.27	   # Radius of gyration (moment of inertia constant)
+#dRotPeriod   -4.02  # Rotation period (vspace parameter)
+dObliquity   0      # Obliquity
+
+# Orbital Parameters
+#dEcc           0.5 # Eccentricity (vspace parameter)
+dSemi           -0.028905036 # Semi-major axis (negative for AU)
+
+# EQTIDE Parameters
+dTidalTau     -638   # Tidal assumed)
+dK2           0.299  # Love Number of degree 2
+saTidePerts   star   # Name of tidal perturber (only central body may have >1)
