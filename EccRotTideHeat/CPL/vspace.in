@@ -1,0 +1,11 @@
+srcfolder  .
+destfolder data
+trialname  eccrot
+
+file   vpl.in
+
+file   star.in
+
+file   e.in
+dEcc  [0.01,0.3,n30] e
+dRotPeriod [-1,-6.5,n65] p

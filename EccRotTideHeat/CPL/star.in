@@ -1,0 +1,18 @@
+# TRAPPIST-1's properties
+sName		  star		# Body's name
+saModules eqtide  # List of modules to apply to this body
+
+# Physical Parameters
+dMass		   0.0886     # Mass, negative -> Earth masses
+dRadGyra	 0.27		# Radius of gyration (moment of inertia constant)
+dRadius    -0.00514    # Radius (-1 for AU)
+dRotPeriod -0.47  # Rotation period (-1 -> days)
+dObliquity 0   # Obliquity
+
+# EQTIDE Parameters
+dTidalQ     1e6   # Tidal Q
+dK2         1.5  # Love number of degree 2
+saTidePerts e    # Names of perturbing bodies (only central body may have >1)
+
+# If no output selected, only a log file is written (assuming bDoLog is set to 1)
+#saOutputOrder
